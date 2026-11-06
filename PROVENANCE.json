@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "release_date": "2026-11-06",
+  "repository": "ParkerTsai/paper-a-relational-reasoning-benchmark",
+  "sources": [
+    {
+      "name": "Information_Exposure_Crossed_P100_Final_Results_v1.zip",
+      "size_bytes": 9394816,
+      "sha256": "46ca03ca8e438f378d86646b25a76b4b21efcc5fa89af5fe65caacf7ab4a6cdf"
+    },
+    {
+      "name": "Information_Exposure_P100_Final_Results_v1.zip",
+      "size_bytes": 24971000,
+      "sha256": "1d863cf8063bdd3fa941f70d9ba5c66758af4b7930370cf69fe179a78637a557"
+    },
+    {
+      "name": "Information_Exposure_P100_Public_Reproducible_Results_v1.zip",
+      "size_bytes": 3542882,
+      "sha256": "3e1634779b5fb9066eea73b451f1693bb035f08cd68fb639cc242108b98b9ee1"
+    },
+    {
+      "name": "Information_Exposure_P500_Final_Results_v1.tar.xz",
+      "size_bytes": 6944176,
+      "sha256": "3f4f00d18bd0390556c0f2e38ab37edd3431d5c488d424725f7e6590467de09e"
+    },
+    {
+      "name": "PaperA_Verified_Research_and_PeerJ_Revision_Package_20261104_v1.zip",
+      "size_bytes": 10146387,
+      "sha256": "3fccd2fa635b6d527d501612481a1d6bbc326e6881285095c43a5217f2f6d004"
+    },
+    {
+      "name": "Relational_Inference_Benchmark_v3.zip",
+      "size_bytes": 6045085,
+      "sha256": "5c324eca95dd13642b86dfeba42b899359d1a1c4585461bad6e05acdc4541a39"
+    },
+    {
+      "name": "IE_Confirmation_P100_4380_Final_Results_20261101_Safe_v1.zip",
+      "size_bytes": 9309666,
+      "sha256": "36a4af4813b880ab87e7c6f8386bf4c1b46fdac10b0f62f227c6426de97a5a98"
+    },
+    {
+      "name": "IE_Confirmation_P100_4380_SourceRestore_v2.tar.xz.part001",
+      "size_bytes": 20971520,
+      "sha256": "20465218945c031a0ebb32d62b104700fad1f5e5243421d059047b9c6d8afd41"
+    },
+    {
+      "name": "IE_Confirmation_P100_4380_SourceRestore_v2.tar.xz.part002",
+      "size_bytes": 20971520,
+      "sha256": "a2abf4c59010c898ee2736af127ef4cfde199f331592547c51953af62efc0010"
+    },
+    {
+      "name": "IE_Confirmation_P100_4380_SourceRestore_v2.tar.xz.part003",
+      "size_bytes": 20971520,
+      "sha256": "cffaf2902808dee510ff7947a7eb5de0687df4e3468f62c0aa8a8760741259da"
+    },
+    {
+      "name": "IE_Confirmation_P100_4380_SourceRestore_v2.tar.xz.part004",
+      "size_bytes": 20971520,
+      "sha256": "509fc2be7f0f2215d951c3dcb24c70fcbe8cfd24dec5bc6e7b6ffe13d798beb7"
+    },
+    {
+      "name": "IE_Confirmation_P100_4380_SourceRestore_v2.tar.xz.part005",
+      "size_bytes": 20971520,
+      "sha256": "4d65fb8bc8df7b80a9130a96f0a83fd97b444a2c8f4f555dcdfe0780906d84eb"
+    },
+    {
+      "name": "IE_Confirmation_P100_4380_SourceRestore_v2.tar.xz.part006",
+      "size_bytes": 20971520,
+      "sha256": "d981937b284ff030a3ade2d23183f7d6fc804ffcb2eb442c8f5e5be48af6797e"
+    },
+    {
+      "name": "IE_Confirmation_P100_4380_SourceRestore_v2.tar.xz.part007",
+      "size_bytes": 20971520,
+      "sha256": "8d590fc16e29732ee69f8fb87aa400e1bbb59e1b3898ef81b11049240749f538"
+    },
+    {
+      "name": "IE_Confirmation_P100_4380_SourceRestore_v2.tar.xz.part008",
+      "size_bytes": 20971520,
+      "sha256": "3b38761f0d64ca94f08860784cf438caaf1df97748e5d08f70d5d9e20ddd2300"
+    },
+    {
+      "name": "IE_Confirmation_P100_4380_SourceRestore_v2.tar.xz.part009",
+      "size_bytes": 8671460,
+      "sha256": "c859f7f6cdeffec8cb1a4ba8f9c00352358a09ea3879c820cfc2f02bd8081264"
+    },
+    {
+      "name": "IE_Confirmation_P100_4380_SourceRestore_v2_file_hashes.json",
+      "size_bytes": 1111202,
+      "sha256": "7ce16fca6c4b177ed7a18bd6cc6af68379c48d6d023edc1a09a7caffb97c3e0b"
+    },
+    {
+      "name": "IE_Confirmation_P100_4380_SourceRestore_v2_volume_manifest.json",
+      "size_bytes": 1892,
+      "sha256": "f3bd66bf9bd0e5a7a650b59d24b64be3f11bf7acbe7370e56ec49c5ae1665f6c"
+    },
+    {
+      "name": "PaperA_PeerJ_Source.zip",
+      "size_bytes": 4471175,
+      "sha256": "dd447382b6d605ced51ab44286e96e70c7bd8bcf93e454e992ada6bb93dea735"
+    }
+  ],
+  "original_source_restore_archive": {
+    "size": 176443620,
+    "sha256": "73e3aba15660d7311737c2f0e0dd1c935117bccf54e617e8f0b4ba175da0e4e2",
+    "pass": true
+  },
+  "manuscript_scope_reference": {
+    "filename": "PaperA_PeerJ_ZH_References_Numbering.docx",
+    "sha256": "4a4d2b39b28562c0c610397d971a11726644d097412775c3e01541b3ad2b7a8b",
+    "role": "Scope reference; manuscript text is not distributed in this data release."
+  },
+  "retention_details": "See CURATION.json for exact source-member retention, exclusions, and transformations. Source archive hashes identify the retrieved originals, not the derived delivery archive.",
+  "provider_calls_during_preparation": 0
+}

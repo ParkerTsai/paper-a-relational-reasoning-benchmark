@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "release_date": "2026-11-06",
+  "original_source_integrity": {
+    "source_files_verified": 6171,
+    "result_archive_manifest_entries_verified": 9581,
+    "errors": 0
+  },
+  "curated_main_input_bindings": {
+    "status": "PASS",
+    "mode": "offline_original_hash_binding",
+    "unique_payloads": 2980,
+    "compressed_payload_hashes_passed": 2980,
+    "uncompressed_message_hashes_passed": 2980,
+    "original_wire_request_hashes_passed": 4380,
+    "planned_requests": 4380,
+    "models": {
+      "luna_low": 2980,
+      "haiku_medium": 700,
+      "luna_high": 700
+    },
+    "unique_semantic_questions": 200,
+    "worlds": 10,
+    "frozen_order_positions_verified": 4380,
+    "payload_restore_map_sha256": "ed20f0910a7fd46eceffb99e1136a77404649edc98c8e93ff90de7d1fb064d36",
+    "request_config_sha256": "ff9715ab289cb8017bc1f801b8b7bfe86b7c17bf10280f81d75df04627c8cd7c",
+    "request_plan_sha256": "4bb489cedbc5f8548f18dbc00df4328a0877a79a69e242a308fe7536ff6d8089",
+    "exported_wire_files": 0,
+    "network_calls": 0,
+    "model_calls": 0,
+    "scope_limit": "Reconstructs every original complete wire body from preserved messages and final parameters. Does not rerun world generation, tokenization, model inference, or result scoring."
+  },
+  "fresh_offline_analysis_checks": {
+    "pilot_p100_scored_rows": 952,
+    "pilot_p500_scored_rows": 924,
+    "crossed_scored_rows": 720,
+    "p100_canonical_metric_rows": 2856,
+    "common100_first_selected_scored_rows": 4200,
+    "common100_raw_attempts": 2727,
+    "common100_checks": 59,
+    "reference_csv_rows": 2100,
+    "T06_T10_rows": 42,
+    "T06_T10_cells": 240,
+    "length_raw_rows": 720,
+    "length_unique_receipts": 360
+  },
+  "curated_payload": {
+    "files": 14221,
+    "bytes": 1138698813
+  },
+  "targeted_privacy_review": {
+    "main_credentials_or_signed_url_matches": 0,
+    "results_findings": {
+      "owned_files": 8051,
+      "owned_bytes": 748772915,
+      "manifest_mismatches": [],
+      "unrecorded": [],
+      "secret_patterns": [],
+      "private_paths": [],
+      "nested_archives": [],
+      "caches": [],
+      "status": "PASS"
+    },
+    "scope": "Targeted common credential/signed URL/private-path scans and documented curation; not a universal proof of absence of all sensitive information."
+  },
+  "historical_outputs_not_rerun": [
+    "full frozen Holm43/world-bootstrap and fixed-world-bootstrap scripts",
+    "full semantic finite-world audit; portable path adapter supplied, syntax checked"
+  ],
+  "limits": [
+    "Original manuscript recovery-generation script was not found. New independent verifier is clearly labeled, preserves frozen selected attempts, and exactly matches original CSV/tables.",
+    "Secret scan covers common token/PEM patterns, not every conceivable sensitive datum.",
+    "Original archive manifests are provenance manifests and include deliberately excluded operational members. Top-level release manifest is authoritative for curated payload integrity.",
+    "Historical draft generators retain historical relative layout conventions; the top-level verifier is portable.",
+    "Historical v2 drafts include a proposed Gemini condition, while final request_config/plan and payloads bind Luna and Haiku.",
+    "No fresh full world-regeneration, tokenizer, model inference, or result-scoring run was performed in this main-source staging task."
+  ],
+  "restoration_smoke_test": {
+    "status": "PASS",
+    "files": 14221,
+    "bytes": 1138698813,
+    "strict": true,
+    "archive_sha256": "5621ae04d8c13c1f31d08ed219a38cadd1e19cbc19f42cfd8e02926173f10071",
+    "network_calls": 0,
+    "mode": "fresh_empty_directory_restore_and_strict_per_file_verification",
+    "archive_parts": 20,
+    "archive_size_bytes": 409862763
+  },
+  "model_api_calls_during_release_preparation": 0,
+  "restored_payload_input_check": {
+    "status": "PASS",
+    "unique_payloads": 2980,
+    "compressed_payload_hashes_passed": 2980,
+    "uncompressed_message_hashes_passed": 2980,
+    "original_wire_request_hashes_passed": 4380,
+    "frozen_order_positions_verified": 4380,
+    "network_calls": 0,
+    "model_calls": 0
+  }
+}

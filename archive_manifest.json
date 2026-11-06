@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "format": "tar.gz",
+  "release_date": "2026-11-06",
+  "archive_size_bytes": 409862763,
+  "archive_sha256": "5621ae04d8c13c1f31d08ed219a38cadd1e19cbc19f42cfd8e02926173f10071",
+  "file_manifest": "file_manifest.json",
+  "part_size_bytes": 20971520,
+  "parts": [
+    {
+      "path": "paper_a_data.tar.gz.part001",
+      "size_bytes": 20971520,
+      "sha256": "35be559baa4b6d6ec54d438afd7e32f5156451cb18e60aabef3b3ffe79856db9"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part002",
+      "size_bytes": 20971520,
+      "sha256": "6e70fe46ae70a9104430b9d7c4d5053592e57dfd2dd25bc31b0392ec1e8bd8ac"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part003",
+      "size_bytes": 20971520,
+      "sha256": "7a6d19ed78c7a7b31c9c38928e8523f379c06426593f7e836df1a004e8d07374"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part004",
+      "size_bytes": 20971520,
+      "sha256": "38e5eeda04a4247c1c2c40e8ed5c3664e83200f6e8b81e838f6ffbcba6013288"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part005",
+      "size_bytes": 20971520,
+      "sha256": "d8caa1b2dbbda2afc942b952eee754476e77eec51f131be703ffd1ee8a0fae79"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part006",
+      "size_bytes": 20971520,
+      "sha256": "e166767a0b9506392ab5373bfd92b4826e7789a74538ecaa662e9f3bec2316fb"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part007",
+      "size_bytes": 20971520,
+      "sha256": "b223a628ee578c0adbeda71e25cf662ac04e24a7ed6ff38ed65d5b91874c8f5f"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part008",
+      "size_bytes": 20971520,
+      "sha256": "5c6d9a7fdcb2c7222228c8507ffcc705414cb240f66bca256559c9c0fab398f6"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part009",
+      "size_bytes": 20971520,
+      "sha256": "419cc3473be8edc72e87944f435e5b6872edd92dc93018ffe59ebf80416e0463"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part010",
+      "size_bytes": 20971520,
+      "sha256": "ca99c0b87a1454873b2c8ea2034b87df8af0f2c0a12de880361b65db1ecfa539"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part011",
+      "size_bytes": 20971520,
+      "sha256": "186eb7243bd220ad7cdb29d65fb4f53f337ef5c0ccb4fa42dbbdbd23e7e89628"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part012",
+      "size_bytes": 20971520,
+      "sha256": "6480ae76a2abdb4462a58d476896df80704d6a434ff9642270c63d14665d621a"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part013",
+      "size_bytes": 20971520,
+      "sha256": "6099d44f550ec753712cd3a9ea8bd05903d61771e7d2d9adb60ead27cd519ee4"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part014",
+      "size_bytes": 20971520,
+      "sha256": "6716295806496d8ca600f55f5181ad9e60d8a3cbc86177567ec6fbadc594ea1a"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part015",
+      "size_bytes": 20971520,
+      "sha256": "2a0936ca014ed387a501f61f57537dd11cc6949ceb00a064633b7cdab1f4e05b"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part016",
+      "size_bytes": 20971520,
+      "sha256": "e4c3e89a36aeb835380485db1ca5dbb72d737f298c5fb6a9b8a21dd129698190"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part017",
+      "size_bytes": 20971520,
+      "sha256": "2d78a960ce2796b8ce737ad2ba63d0e8d266b3a5ad6baa84c6c7bd6f69858905"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part018",
+      "size_bytes": 20971520,
+      "sha256": "38ab1e48c199d0c0049b3c0c5a9af268c8b855c12fa671c37115b15d18aa8b37"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part019",
+      "size_bytes": 20971520,
+      "sha256": "de88c2a79204d7cabe849f4487b720e88e1fcd276770e388114c8e6ae25d6ca9"
+    },
+    {
+      "path": "paper_a_data.tar.gz.part020",
+      "size_bytes": 11403883,
+      "sha256": "473e7490dbae090e0cafc13244d0f70257d1f1d95c79b71b06e6ef476b6c21d8"
+    }
+  ]
+}
