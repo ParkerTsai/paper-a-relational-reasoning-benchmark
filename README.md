@@ -2,7 +2,7 @@
 
 Reproducibility materials for **evidence-conditioned relational identity reasoning** with seven answer-preserving evidence levels, B0–B6. The benchmark contains synthetic worlds, executable question definitions, exact model inputs, recorded responses, scoring data, and offline analysis programs.
 
-This repository was created as a **private research repository** on 2026-11-06. A public license and archival DOI have not been assigned.
+This repository was created as a **private research repository** on 2026-11-06. Licensing is specified below. An archival DOI has not been assigned.
 
 ## Download, restore, and verify
 
@@ -10,7 +10,7 @@ The release contains **14,221 restored files** (1,138,698,813 bytes). The compre
 
 Open the repository's [Releases page](https://github.com/ParkerTsai/paper-a-relational-reasoning-benchmark/releases) and download the asset **`paper-a-reproducibility-bundle-2026-11-06.zip`**. Extract that ZIP into a new folder. It contains all **32 delivery files** at its root: the 20 `paper_a_data.tar.gz.partNNN` files and 12 metadata, documentation, and verification files.
 
-The repository's `main` branch retains the 12 metadata and verification files plus the previously uploaded first data part, `paper_a_data.tar.gz.part001`—13 files in total. GitHub's automatically generated **Source code (zip)** and **Source code (tar.gz)** downloads therefore contain the metadata and the first part only. They are incomplete and cannot restore the dataset. Use the named release asset above to obtain all 20 parts and the complete data bundle.
+The repository's `main` branch retains the 12 metadata and verification files plus the previously uploaded first data part, `paper_a_data.tar.gz.part001`—together with two license files, 15 files in total. GitHub's automatically generated **Source code (zip)** and **Source code (tar.gz)** downloads therefore contain the metadata, license files, and the first part only. They are incomplete and cannot restore the dataset. Use the named release asset above to obtain all 20 parts and the complete data bundle.
 
 Use Python 3.10 or newer. The following utilities use only the Python standard library:
 
@@ -67,8 +67,23 @@ The delivered archive is a newly assembled scientific package, so its hash diffe
 
 Some analysis programs and tables are historical research artifacts. New delivery and analysis verifiers are identified as such. Validation distinguishes checks rerun for this delivery from historical reports; it does not imply new model execution.
 
+## Licensing
+
+Copyright (c) 2026 Ming-Han Tsai.
+
+Except where otherwise stated:
+
+- Original project source code, including the world generator, query solvers, validation, scoring, analysis, plotting, restoration, and verification programs, is licensed under the [MIT License](LICENSE-MIT.txt).
+- The synthetic datasets and associated documentation, including question definitions, evidence views, recorded model inputs and responses, scoring records, and result tables, are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](LICENSE-CC-BY-4.0.txt).
+
+These licenses apply to the corresponding materials in this repository and in the existing `data-2026-11-06` release asset, `paper-a-reproducibility-bundle-2026-11-06.zip`, including files restored from its split archive. This notice supersedes earlier statements that a license had not yet been assigned. The existing release archive and its verification hashes are unchanged. Any separately identified third-party material remains subject to its original terms.
+
+For CC BY 4.0 attribution, identify Ming-Han Tsai as the creator and cite this repository and the data version used; retain the license notice and indicate any changes. The complete license texts are provided in the two files linked above.
+
+除另有註明外，本研究的原創程式碼採 MIT License；合成資料集及相關說明文件採 CC BY 4.0。此授權亦涵蓋既有 `data-2026-11-06` Release 資料包內的相應內容，取代舊版「尚未指定授權」的說明。既有資料包與校驗碼維持原樣；另有標示的第三方內容仍依原授權。使用 CC BY 4.0 資料時，請註明作者蔡明翰（Ming-Han Tsai）、儲存庫及所用資料版本，保留授權聲明並標示修改。
+
 ## 中文操作說明
 
-請到 [Releases 頁面](https://github.com/ParkerTsai/paper-a-relational-reasoning-benchmark/releases) 下載 **`paper-a-reproducibility-bundle-2026-11-06.zip`**，解壓至新資料夾。這個附件含完整 32 個交付檔案，其中包括全部 20 個資料分卷。`main` 分支保留 12 個說明、清單與驗證檔案，加上先前已上傳的第一分卷 `paper_a_data.tar.gz.part001`，共 13 個檔案。GitHub 自動產生的 **Source code (zip／tar.gz)** 因此只含這些 metadata 與第一分卷，下載內容不完整，無法還原資料；完整資料請使用上述 Release 附件。
+請到 [Releases 頁面](https://github.com/ParkerTsai/paper-a-relational-reasoning-benchmark/releases) 下載 **`paper-a-reproducibility-bundle-2026-11-06.zip`**，解壓至新資料夾。這個附件含完整 32 個交付檔案，其中包括全部 20 個資料分卷。`main` 分支保留 12 個說明、清單與驗證檔案，加上先前已上傳的第一分卷 `paper_a_data.tar.gz.part001`，以及兩份授權文件，共 15 個檔案。GitHub 自動產生的 **Source code (zip／tar.gz)** 因此只含這些 metadata、授權文件與第一分卷，下載內容不完整，無法還原資料；完整資料請使用上述 Release 附件。
 
 在解壓後的資料夾依上方三個 Python 指令依序檢查、還原及逐檔驗證。資料分卷需要合併後解壓，請交由 `restore.py` 處理。還原與驗證不需要 API key，也不會呼叫付費模型。主要研究、共同 100 題、兩組長度控制與 P100／P500 先導研究的範圍，分別記錄於資料及分析目錄。
