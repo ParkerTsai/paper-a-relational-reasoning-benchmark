@@ -1,0 +1,10 @@
+{
+  "title": "Paper A: a reproducible, answer-preserving benchmark for relational identity reasoning (reproducibility bundle)",
+  "upload_type": "dataset",
+  "creators": [
+    {"name": "Tsai, Ming-Han", "affiliation": "Department of Information Engineering and Computer Science, Feng Chia University"}
+  ],
+  "description": "Reproducibility materials for evidence-conditioned relational identity reasoning with seven answer-preserving evidence levels (B0-B6): world generator, fixed seeds, executable question queries, evidence views, uniqueness validators, exact model inputs, recorded responses, scoring tables and offline analysis programs. The data are distributed as a 20-part split archive; see README.md for restoration and verification. Code is licensed under the MIT License; the synthetic dataset and documentation are licensed under CC BY 4.0.",
+  "license": "cc-by-4.0",
+  "keywords": ["large language models", "benchmark", "relational reasoning", "synthetic data", "evaluation"]
+}
