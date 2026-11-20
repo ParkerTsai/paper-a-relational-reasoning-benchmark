@@ -20,7 +20,7 @@ python restore.py --output restored
 python verify.py --data restored --strict
 ```
 
-If you also run `sha256sum -c SHA256SUMS`, the `README.md` entry reports FAILED because `SHA256SUMS` retains the checksum of the original release-asset README. Documentation-only updates to the repository README do not modify the archived data or code. The other checksum entries should report OK; use the archive and file manifests with `verify.py` for dataset integrity verification.
+If you also run `sha256sum -c SHA256SUMS`, the `README.md` entry reports FAILED because `SHA256SUMS` retains the checksum of the original release-asset README. The other checksum entries should report OK; use the archive and file manifests with `verify.py` for dataset integrity verification.
 
 Run these commands from the folder containing this README and all 20 parts. `restore.py` joins the parts, verifies the combined archive, restores into an empty directory, and verifies every restored file. The parts are slices of one compressed archive; they are not individually extractable archives. Restoration uses temporary disk space for the joined archive as well as space for the restored files.
 
@@ -70,14 +70,15 @@ python -B scripts/build_naming_v2.py
 cd ..
 ```
 
-Compare the regenerated `regen/public/`, `regen/author/`, `regen/views_v2/`, and `regen/naming_v2/` with the corresponding directories under `restored/main/science/`. Worlds, questions, fixed subsets, and manifests can be checked byte-for-byte. For gzip-compressed message files, compare *decompressed contents*: the compressed bytes may differ across zlib versions even if the messages are identical. The two naming variants comprise 2,800 B0–B6 input versions; the original submitted message payloads are archived under `restored/main/payloads/`. The independent verification recorded on 20 November 2026 found identical regenerated contents. Padding inputs were separately replayed from archived filler counts; provider tokenization was not rerun.
+Compare the regenerated `regen/public/`, `regen/author/`, `regen/views_v2/`, and `regen/naming_v2/` with the corresponding directories under `restored/main/science/`. Worlds, questions, fixed subsets, and manifests can be checked byte-for-byte. For gzip-compressed message files, compare *decompressed contents*: the compressed bytes may differ across zlib versions even if the messages are identical. The two naming variants comprise 2,800 B0–B6 input versions; the original submitted message payloads are archived under `restored/main/payloads/`. The independent verification recorded on 20 November 2026 found identical regenerated contents. The 180 padded inputs were likewise rebuilt from the archived filler-module counts (`restored/main/candidate_v10/evidence/replay.py`, with counts recorded in `token_replay_validation.json` in the same folder); together with the 2,800 base inputs, all 2,980 unique main-experiment message payloads matched the archived payloads.
 
 ## Requirements
 
 - Python 3.10 or newer. Restoration, verification, input reconstruction, seed regeneration, and the quick research checks use the Python standard library.
 - Extended statistical analyses require `numpy`, `pandas`, and `scipy`; plotting additionally uses `matplotlib`. See `restored/analysis/README.md` for commands and optional dependencies.
 - After obtaining the public archive, local verification and analysis need neither a GPU, an API key, nor any model-service network calls. At least approximately 2.5 GB of disk space is needed for restoration alone; about 5 GB is recommended when also regenerating data and storing analysis outputs.
-- An independent clean-environment check on Linux (kernel 6.18, 2 vCPU, 7 GB RAM) used Python 3.13.18, NumPy 2.5.3, pandas 3.0.5, and SciPy 1.18.1; this was the *reproduction* environment, not necessarily the original inference environment.
+- Reproduction environment (independent clean check, 20 November 2026): Linux (kernel 6.18, 2 vCPU, 7 GB RAM), Python 3.13.18, NumPy 2.5.3, pandas 3.0.5, SciPy 1.18.1.
+- Original experiment software: Python 3.12 in the Codex runtime, as shown in the main-run test logs (`restored/main/candidate_v10/evidence/integration_tests.txt`); the pilot environment record (`restored/pilots/source/environment_versions.json`) lists Python 3.12.14.
 
 ## Methodology
 
@@ -85,7 +86,7 @@ Compare the regenerated `regen/public/`, `regen/author/`, `regen/views_v2/`, and
 2. Twenty questions per world (60 SQL, 70 Graph, and 70 Narrative in total) are selected and checked for a unique answer using independent oracle procedures.
 3. Seven cumulative B0–B6 evidence views preserve each question's answer. Two naming variants yield 2,800 base input versions; the archived ten-world length controls add 180 padded input versions.
 4. Model inference was performed in the original experiment, with documented retries. The archive retains attempts, selection decisions, and separate strict and deterministic format-recovered scoring channels.
-5. The principal analyses can be recomputed offline using stored responses, without new model API requests. The archived analysis documentation identifies the relevant cohorts and extended commands.
+5. The principal analyses can be recomputed offline using stored responses. The archived analysis documentation identifies the relevant cohorts and extended commands.
 
 Detailed definitions and experimental comparisons are provided in the accompanying manuscript.
 
@@ -93,7 +94,7 @@ Detailed definitions and experimental comparisons are provided in the accompanyi
 
 For use of the dataset and code, cite the *specific archived version* used. For `v1.0.0`: Tsai, M.-H. (2026). *Paper A: relational reasoning benchmark* (Version v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24216316. If citing a later documentation release, use that release's own version-specific Zenodo DOI instead.
 
-Associated manuscript (currently submitted, not yet published): Tsai, M.-H. *A reproducible, answer-preserving benchmark for relational identity reasoning: accuracy, answer stability, and response coverage of large language models under controlled evidence conditions.* Manuscript submitted to PeerJ Computer Science.
+Associated manuscript: Tsai, M.-H. *A reproducible, answer-preserving benchmark for relational identity reasoning: accuracy, answer stability, and response coverage of large language models under controlled evidence conditions.* Manuscript submitted to PeerJ Computer Science.
 
 ## Dataset information (research scope)
 
@@ -115,7 +116,7 @@ See [DATA_COVERAGE.md](DATA_COVERAGE.md) for the relationship between these scop
 
 The original raw response contents and selected-attempt decisions are retained. Haiku strict parsing and deterministic JSON-fence recovery are separate channels. Recovery strips one complete JSON code fence where the recorded recovery rule applies; it does not change the question, evidence, answer, or attempt selection. Both strict and recovered outcomes remain available.
 
-The two length-control cohorts use different questions. Their files and analyses are kept separate. P100 and P500 likewise contain different question sets. P500 B6 configurations marked blocked/NA have no invented responses.
+The two length-control cohorts use different questions. Their files and analyses are kept separate. P100 and P500 likewise contain different question sets. P500 B6 configurations exceeded the input limit of the evaluation setting, were not submitted, and are marked blocked/NA.
 
 ## Provenance and curation
 
@@ -123,7 +124,7 @@ The two length-control cohorts use different questions. Their files and analyses
 
 The delivered archive is a newly assembled scientific package, so its hash differs from the original backup archive hashes. Exact benchmark payload preservation and request reconstruction are checked separately; see [VALIDATION.json](VALIDATION.json).
 
-Some analysis programs and tables are historical research artifacts. New delivery and analysis verifiers are identified as such. Validation distinguishes checks rerun for this delivery from historical reports; it does not imply new model execution.
+Some analysis programs and tables are historical research artifacts. New delivery and analysis verifiers are identified as such. Validation distinguishes checks rerun for this delivery from historical reports.
 
 ## Licensing
 
@@ -138,7 +139,7 @@ These licenses apply to the corresponding materials in this repository and in th
 
 For CC BY 4.0 attribution, identify Ming-Han Tsai as the creator and cite this repository and the data version used; retain the license notice and indicate any changes. The complete license texts are provided in the two files linked above.
 
-**Contributions.** This repository accompanies a manuscript submitted to PeerJ Computer Science. To report problems or propose corrections, please use GitHub Issues; existing archived release data and code are preserved.
+**Contributions.** This repository accompanies a manuscript submitted to PeerJ Computer Science. To report problems or propose corrections, please use GitHub Issues.
 
 除另有註明外，本研究的原創程式碼採 MIT License；合成資料集及相關說明文件採 CC BY 4.0。此授權亦涵蓋既有 `data-2026-11-06` Release 資料包內的相應內容，取代舊版「尚未指定授權」的說明。既有資料包與校驗碼維持原樣；另有標示的第三方內容仍依原授權。使用 CC BY 4.0 資料時，請註明作者蔡明翰（Ming-Han Tsai）、儲存庫及所用資料版本，保留授權聲明並標示修改。
 
