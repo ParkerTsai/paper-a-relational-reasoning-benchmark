@@ -1,4 +1,4 @@
-# Paper A: relational reasoning benchmark
+# A reproducible, answer-preserving benchmark for relational identity reasoning: accuracy, answer stability, and response coverage of large language models under controlled evidence conditions
 
 Reproducibility materials for **evidence-conditioned relational identity reasoning** with seven answer-preserving evidence levels, B0–B6. The benchmark contains synthetic worlds, executable question definitions, exact model inputs, recorded responses, scoring data, and offline analysis programs.
 
@@ -92,7 +92,7 @@ Detailed definitions and experimental comparisons are provided in the accompanyi
 
 ## Citation
 
-For use of the dataset and code, cite the *specific archived version* used. For `v1.0.0`: Tsai, M.-H. (2026). *Paper A: relational reasoning benchmark* (Version v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24216316. If citing a later documentation release, use that release's own version-specific Zenodo DOI instead.
+For use of the dataset and code, cite the *specific archived version* used. For `v1.0.0`: Tsai, M.-H. (2026). *A reproducible, answer-preserving benchmark for relational identity reasoning: accuracy, answer stability, and response coverage of large language models under controlled evidence conditions* (Version v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.24216316. If citing a later documentation release, use that release's own version-specific Zenodo DOI instead.
 
 Associated manuscript: Tsai, M.-H. *A reproducible, answer-preserving benchmark for relational identity reasoning: accuracy, answer stability, and response coverage of large language models under controlled evidence conditions.* Manuscript submitted to PeerJ Computer Science.
 
