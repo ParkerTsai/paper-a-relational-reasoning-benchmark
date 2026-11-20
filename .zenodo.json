@@ -1,5 +1,5 @@
 {
-  "title": "Paper A: a reproducible, answer-preserving benchmark for relational identity reasoning (reproducibility bundle)",
+  "title": "A reproducible, answer-preserving benchmark for relational identity reasoning: accuracy, answer stability, and response coverage of large language models under controlled evidence conditions",
   "upload_type": "dataset",
   "creators": [
     {"name": "Tsai, Ming-Han", "affiliation": "Department of Information Engineering and Computer Science, Feng Chia University"}
